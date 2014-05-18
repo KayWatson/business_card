@@ -1,0 +1,29 @@
+.wrapper_card{
+	border: 1px solid green;
+	width: 70%;
+	height: 300px; //for testing, replace with padding and %
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 80px;
+	margin-bottom: 60px;
+}
+
+.welcome_header{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.wrapper_button--card{
+	margin: 0 auto;
+	width: 250px;
+	//border: 1px solid black;
+	
+	a.button{
+			width: 100%;
+			padding: 20px 0;
+	}
+	a.simple{ 
+		@include border-radius(4px, 4px); //compass border radius
+	}
+
+}
