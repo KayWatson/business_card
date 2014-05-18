@@ -13,12 +13,14 @@
 @import "compass/css3/border-radius";
 @import "compass/css3/box-shadow";
 @import "compass/css3/images";
+@import "compass/css3/transform";
 
 /*------------------------------------*\
     $GLOBAL ELEMENTS
 \*------------------------------------*/
 
 @import "theme/variables";
+@import "theme/mixins";
 @import "base/text";
 @import "layout/grid";
 @import "module/card";

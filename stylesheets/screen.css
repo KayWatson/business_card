@@ -74,6 +74,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     $GLOBAL ELEMENTS
 \*------------------------------------*/
 /* Variables */
+/* Mixins */
 /* line 1, ../scss/base/_text.scss */
 body {
   font-family: arial, helvetica, sans-serif;
@@ -82,64 +83,87 @@ body {
 /* line 5, ../scss/base/_text.scss */
 h1 {
   font-size: 3em;
+  color: #87898c;
 }
 
-/* line 9, ../scss/base/_text.scss */
+/* line 10, ../scss/base/_text.scss */
 h2 {
   font-size: 2.5em;
+  color: #585b60;
 }
 
 /* line 1, ../scss/layout/_grid.scss */
-.columns {
-  border: 1px solid red;
+body {
+  background: #BDC2C9;
 }
 
-/* line 4, ../scss/layout/_grid.scss */
+/* line 5, ../scss/layout/_grid.scss */
+.columns {
+  background-image: -webkit-gradient(radial, 55px 55px, 0, 55px 55px, 400, color-stop(2.5%, #f0f4fa), color-stop(100%, #bdc2c9));
+  background-image: -webkit-radial-gradient(55px 55px, #f0f4fa 10px, #bdc2c9 400px);
+  background-image: -moz-radial-gradient(55px 55px, #f0f4fa 10px, #bdc2c9 400px);
+  background-image: -o-radial-gradient(55px 55px, #f0f4fa 10px, #bdc2c9 400px);
+  background-image: radial-gradient(55px 55px, #f0f4fa 10px, #bdc2c9 400px);
+  width: 100%;
+}
+
+/* line 11, ../scss/layout/_grid.scss */
 .row {
   margin: 0 auto;
-  border: 1px solid green;
 }
 
-/* line 9, ../scss/layout/_grid.scss */
+/* line 16, ../scss/layout/_grid.scss */
 .wrapper {
   height: 100%;
 }
 
-/* line 13, ../scss/layout/_grid.scss */
+/* line 20, ../scss/layout/_grid.scss */
 .wrapper_welcome {
   padding-top: 50px;
+  height: 100%;
 }
 
 /* line 1, ../scss/module/_card.scss */
 .wrapper_card {
-  border: 1px solid green;
-  width: 70%;
+  width: 57%;
   height: 300px;
   text-align: center;
   margin: 0 auto;
-  margin-top: 80px;
-  margin-bottom: 60px;
+  margin-top: 70px;
+  margin-bottom: 65px;
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+  background-color: #ffffff;
+  box-shadow: -10px 10px 30px #C4C4C4;
 }
 
-/* line 11, ../scss/module/_card.scss */
+/* line 14, ../scss/module/_card.scss */
 .welcome_header {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 16, ../scss/module/_card.scss */
+/* line 20, ../scss/module/_card.scss */
 .wrapper_button--card {
   margin: 0 auto;
-  width: 250px;
+  width: 200px;
 }
-/* line 21, ../scss/module/_card.scss */
+/* line 25, ../scss/module/_card.scss */
 .wrapper_button--card a.button {
   width: 100%;
   padding: 20px 0;
+  background-color: #87898c;
 }
-/* line 25, ../scss/module/_card.scss */
+/* line 29, ../scss/module/_card.scss */
+.wrapper_button--card a.button:hover {
+  background-color: #585b60;
+}
+/* line 33, ../scss/module/_card.scss */
 .wrapper_button--card a.simple {
-  -webkit-border-radius: 4px 4px;
-  -moz-border-radius: 4px / 4px;
-  border-radius: 4px / 4px;
+  -webkit-border-radius: 2px 2px;
+  -moz-border-radius: 2px / 2px;
+  border-radius: 2px / 2px;
 }
