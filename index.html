@@ -23,16 +23,24 @@
             <h2>Would You Like My Business Card?<h2>
           </div>
           <div class="wrapper_card"></div>
-              <button class=" button simple button_card">Yes I Would!</button>
+              <button class=" button simple button_card">YES I WOULD</button>
               <div class="inner row">
-                <div class= "med-3 columns"></div>
-                <div class= "med-3 columns">
-                  <form>
-                    <label for="right-label" class="right inline">Label</label>
-                    <input type="text" id="right-label" placeholder="Inline Text Input">
-                  </form>
-                </div>
-                <div class= "med-3 columns"></div>  
+                <form>
+                      <div class="row">
+                        <div class="small-12 columns">
+                          <div class="small-9 columns wrapper_form--input">
+                            <input class="form--input" type="text" placeholder="FIRST NAME">
+                          </div>
+                          <div class="small-9 columns wrapper_form--input">
+                            <input class="form--input" type="text" placeholder="LAST NAME">
+                          </div>
+                          <div class="small-9 columns wrapper_form--input">
+                            <input class="form--input" type="text" placeholder="EMAIL">
+                          </div>
+                          <button class="small-9 columns button_form">SEND IT</button>
+                        </div>
+                      </div>
+                </form> 
               </div>
           </div>
         <div class="medium-1 columns"></div>
@@ -42,8 +50,8 @@
     <script>   
         $(document).ready(function(){
         $('#slidebottom button').click(function() {
-        $(this).next().slideToggle();
-         });
+          $(this).next().slideToggle();
+          });
         });
       </script>
   </body>

@@ -97,37 +97,38 @@ body {
   background: #BDC2C9;
 }
 
-/* line 5, ../scss/layout/_grid.scss */
-.columns {
-  border: 1px solid red;
-  background-image: -webkit-gradient(radial, 55px 55px, 0, 55px 55px, 400, color-stop(2.5%, #f0f4fa), color-stop(100%, #bdc2c9));
-  background-image: -webkit-radial-gradient(55px 55px, #f0f4fa 10px, #bdc2c9 400px);
-  background-image: -moz-radial-gradient(55px 55px, #f0f4fa 10px, #bdc2c9 400px);
-  background-image: -o-radial-gradient(55px 55px, #f0f4fa 10px, #bdc2c9 400px);
-  background-image: radial-gradient(55px 55px, #f0f4fa 10px, #bdc2c9 400px);
-  width: 100%;
-}
-
-/* line 11, ../scss/layout/_grid.scss */
-.row {
-  margin: 0 auto;
-}
-
-/* line 16, ../scss/layout/_grid.scss */
+/* line 8, ../scss/layout/_grid.scss */
 .wrapper {
   height: 100%;
 }
 
-/* line 20, ../scss/layout/_grid.scss */
+/* line 12, ../scss/layout/_grid.scss */
 .wrapper_welcome {
   padding-top: 50px;
   height: 100%;
+  background-image: -webkit-gradient(radial, 45px 55px, 0, 45px 55px, 400, color-stop(2.5%, #f0f4fa), color-stop(100%, #bdc2c9));
+  background-image: -webkit-radial-gradient(45px 55px, #f0f4fa 10px, #bdc2c9 400px);
+  background-image: -moz-radial-gradient(45px 55px, #f0f4fa 10px, #bdc2c9 400px);
+  background-image: -o-radial-gradient(45px 55px, #f0f4fa 10px, #bdc2c9 400px);
+  background-image: radial-gradient(45px 55px, #f0f4fa 10px, #bdc2c9 400px);
+}
+
+/* line 20, ../scss/layout/_grid.scss */
+input.form--input {
+  padding: rem-calc(40);
+  height: 60px;
+}
+
+/* line 26, ../scss/layout/_grid.scss */
+.wrapper_form--input {
+  height: 80px;
 }
 
 /* line 1, ../scss/module/_card.scss */
 .wrapper_card {
-  width: 57%;
-  height: 300px;
+  width: 45%;
+  min-width: 500px;
+  height: 45%;
   text-align: center;
   margin: 0 auto;
   margin-top: 70px;
@@ -141,54 +142,66 @@ body {
   box-shadow: -10px 10px 30px #C4C4C4;
 }
 
-/* line 14, ../scss/module/_card.scss */
+/* line 15, ../scss/module/_card.scss */
 .welcome_header {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 20, ../scss/module/_card.scss */
-.wrapper_button--card {
-  margin: 0 auto;
-  width: 200px;
-}
-/* line 25, ../scss/module/_card.scss */
-.wrapper_button--card a.button {
-  width: 100%;
-  padding: 20px 0;
-  background-color: #87898c;
-}
-/* line 29, ../scss/module/_card.scss */
-.wrapper_button--card a.button:hover {
-  background-color: #585b60;
-}
-/* line 33, ../scss/module/_card.scss */
-.wrapper_button--card a.simple {
-  -webkit-border-radius: 2px 2px;
-  -moz-border-radius: 2px / 2px;
-  border-radius: 2px / 2px;
-}
+/*
+.wrapper_button--card{
+	margin: 0 auto;
+	width: 200px;
+	//border: 1px solid black;
+	
+	a.button{
+			width: 100%;
+			padding: 20px 0;
+			background-color: $grey;
+			&:hover{
+				background-color: $dark-grey;
+			}
+	}
+	a.simple{ 
+		@include border-radius(2px, 2px); //compass border radius
+	}
 
-/* line 38, ../scss/module/_card.scss */
-button {
+}*/
+/* line 39, ../scss/module/_card.scss */
+.button_card {
   width: 200px;
   position: relative;
-  top: 0;
-  left: 40%;
+  left: 41%;
 }
 
 /* line 44, ../scss/module/_card.scss */
-.slide {
+.button_form {
+  width: 380px;
   position: relative;
+  left: -155px;
 }
 
-/* line 47, ../scss/module/_card.scss */
+/* line 49, ../scss/module/_card.scss */
+.slide {
+  position: relative;
+  width: 100%;
+}
+
+/* line 54, ../scss/module/_card.scss */
 .slide .inner {
   display: none;
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 100%;
-  height: 550px;
+  width: 110%;
+  height: 525px;
   background-color: #585b60;
+}
+
+/* line 64, ../scss/module/_card.scss */
+form {
+  width: 50%;
+  position: absolute;
+  top: 70px;
+  left: 28%;
 }

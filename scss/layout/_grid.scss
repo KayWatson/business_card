@@ -1,15 +1,7 @@
 body{
 	background: #BDC2C9;
 }
-
 .columns{
-	border: 1px solid red;
-	//background:-webkit-gradient(radial, 134 189, 0, 188 32, 260, from(#E6EAEF), to(#BDC2C9));
-	@include background-image(radial-gradient(55px 55px, #F0F4FA 10px, #BDC2C9 400px));
-	width: 100%;
-}
-.row{
-	margin: 0 auto;
 	//border: 1px solid green;
 }
 
@@ -21,4 +13,16 @@ body{
 	padding-top: 50px;
 	//border: 1px solid pink;
 	height: 100%;
+	//background:-webkit-gradient(radial, 134 189, 0, 188 32, 260, from(#E6EAEF), to(#BDC2C9));
+	@include background-image(radial-gradient(45px 55px, #F0F4FA 10px, #BDC2C9 400px));
+}
+
+input.form--input{
+	padding: $fieldset-padding;
+	//border: 1px solid red;
+	height: 60px;
+}
+
+.wrapper_form--input{
+	height: 80px;
 }
