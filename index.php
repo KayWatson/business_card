@@ -25,27 +25,36 @@
           </div>
           <div class="wrapper_card">
           </div>
-              <button id="show" class=" button simple button_card">YES I WOULD</button>
-              <div class="inner row">
-                <button id="exit">X</button>
-                <form data-abide action="send_message.php" method="post">
-                      <div class="row">
-                        <div class="small-12 columns">
-                          <div class="small-9 columns wrapper_form--input">
-                            <input class="form--input" type="text" placeholder="FIRST NAME" required pattern="[a-zA-Z]+">
-                            <small class="error">Name is required and must be a string.</small>
-                          </div>
-                          <div class="small-9 columns wrapper_form--input">
-                            <input class="form--input" type="text" placeholder="LAST NAME" required pattern="[a-zA-Z]+">
-                          </div>
-                          <div class="small-9 columns wrapper_form--input">
-                            <input class="form--input" type="email" placeholder="EMAIL" required>
-                            <small class="error">An email address is required.</small>
-                          </div>
-                          <button class="small-9 columns button_form" type="submit">SEND IT</button>
+              <div class="medium-4 columns"></div>
+              <div class="medium-4 columns medium-centered button_card">
+                <button id="show" class="button simple">YES I WOULD</button>
+              </div>
+              <div class="medium-4 columns"></div>
+              <div class="inner">
+                  <div class="small-1 columns">
+                    <button id="exit">X</button>
+                  </div>  
+                <div class="row wrapper_form">
+                <div class="medium-3 columns"></div>
+                <div class="medium-5 medium-centered columns">
+                  <form data-abide action="send.php" method="post">
+                        <div class="row">
+                            <div class="wrapper_form--input">
+                              <input class="form--input" type="text" name="first" placeholder="FIRST NAME" required pattern="[a-zA-Z]+">
+                              <small class="error">Name is required and must be a string.</small>
+                            </div>
+                            <div class="wrapper_form--input">
+                              <input class="form--input" type="text" name="last" placeholder="LAST NAME" required pattern="[a-zA-Z]+">
+                            </div>
+                            <div class="wrapper_form--input">
+                              <input class="form--input" type="email" name="email" placeholder="EMAIL" required>
+                              <small class="error">An email address is required.</small>
+                            </div>
+                            <button class="button_form" type="submit">SEND IT</button>
                         </div>
-                      </div>
-                </form> 
+                  </form>
+                </div>
+                <div class="medium-3 columns"></div> 
               </div>
           </div>
         <div class="medium-1 columns">

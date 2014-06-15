@@ -2,11 +2,13 @@ body{
 	background: #BDC2C9;
 }
 .columns{
-	//border: 1px solid green;
+	//border: 1px solid pink;
 }
 
 .wrapper{
 	height: 100%;
+	width: 100%;
+	//border: 1px solid green;
 }
 
 .wrapper_welcome{
@@ -20,7 +22,12 @@ body{
 input.form--input{
 	padding: $fieldset-padding;
 	//border: 1px solid red;
-	height: 60px;
+	height: 30px;
+}
+
+.wrapper_form{
+	//border: 1px solid blue;
+	padding-top: 80px;
 }
 
 .wrapper_form--input{

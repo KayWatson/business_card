@@ -36,16 +36,15 @@
 	}
 
 }*/
+button{
+	position: relative;
+	width: 100%;
+}
+
 .button_card{
-	width: 200px;
-	position: relative;
-	left: 41%;
+	padding: 0 30px;
 }
-.button_form{
-	width: 380px;
-	position: relative;
-	left: -155px;
-}
+
 .slide {
   position: relative;
   width: 100%;
@@ -56,15 +55,14 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 110%;
+  width: 100%;
+  clear: both;
   height: 525px;
   background-color: $dark-grey;
   //border: 1px solid red; 
 }
 form{
-	//border: 1px solid red; 
-	width: 50%;
-	position: absolute;
-	top: 70px;
-	left: 28%;
+	//border: 1px solid green; 
+	width: 100%;
+	position: relative;
 }

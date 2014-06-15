@@ -931,9 +931,10 @@ body {
 /* line 8, ../scss/layout/_grid.scss */
 .wrapper {
   height: 100%;
+  width: 100%;
 }
 
-/* line 12, ../scss/layout/_grid.scss */
+/* line 14, ../scss/layout/_grid.scss */
 .wrapper_welcome {
   padding-top: 50px;
   height: 100%;
@@ -944,13 +945,18 @@ body {
   background-image: radial-gradient(45px 55px, #f0f4fa 10px, #bdc2c9 400px);
 }
 
-/* line 20, ../scss/layout/_grid.scss */
+/* line 22, ../scss/layout/_grid.scss */
 input.form--input {
-  padding: 2.5rem;
-  height: 60px;
+  padding: 1.875rem;
+  height: 30px;
 }
 
-/* line 26, ../scss/layout/_grid.scss */
+/* line 28, ../scss/layout/_grid.scss */
+.wrapper_form {
+  padding-top: 80px;
+}
+
+/* line 33, ../scss/layout/_grid.scss */
 .wrapper_form--input {
   height: 80px;
 }
@@ -999,40 +1005,36 @@ input.form--input {
 
 }*/
 /* line 39, ../scss/module/_card.scss */
-.button_card {
-  width: 200px;
+button {
   position: relative;
-  left: 41%;
+  width: 100%;
 }
 
 /* line 44, ../scss/module/_card.scss */
-.button_form {
-  width: 380px;
-  position: relative;
-  left: -155px;
+.button_card {
+  padding: 0 30px;
 }
 
-/* line 49, ../scss/module/_card.scss */
+/* line 48, ../scss/module/_card.scss */
 .slide {
   position: relative;
   width: 100%;
 }
 
-/* line 54, ../scss/module/_card.scss */
+/* line 53, ../scss/module/_card.scss */
 .slide .inner {
   display: none;
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 110%;
+  width: 100%;
+  clear: both;
   height: 525px;
   background-color: #585b60;
 }
 
 /* line 64, ../scss/module/_card.scss */
 form {
-  width: 50%;
-  position: absolute;
-  top: 70px;
-  left: 28%;
+  width: 100%;
+  position: relative;
 }
